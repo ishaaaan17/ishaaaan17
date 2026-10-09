@@ -42,10 +42,10 @@
 
 | Date | System | Core measured outcome |
 |---|---|---|
-| Oct 2026 | **MarketStream Lakehouse Platform** | 81k EPS ingestion · 5.05x small-file compaction speedup · exactly-once chaos verified |
-| Aug 2026 | **SEC Financial Intelligence RAG Engine** | 7.25 ms P50 latency · 100% Top-4 table retrieval · zero-leakage payload isolation |
-| Jan 2026 | **GraphSAGE AML Transaction Monitoring** | 18.3x PR-AUC gain over rules (0.0089 → 0.1633) · 80% false-positive cut at 90% recall |
-| Sep 2025 | **Decentralized P2P File Sharing Engine** | Trackerless C++17 UDP protocol · zero-drop swarm recovery · O(1) memory persistence |
+| Oct 2026 | [**MarketStream Lakehouse Platform**](https://github.com/ishaaaan17/market-stream-lakehouse) | 81k EPS ingestion · 5.05x small-file compaction speedup · exactly-once chaos verified |
+| Aug 2026 | [**SEC Financial Intelligence RAG Engine**](https://github.com/ishaaaan17/financial-intelligence-rag) | 7.25 ms P50 latency · 100% Top-4 table retrieval · zero-leakage payload isolation |
+| Jan 2026 | [**GraphSAGE AML Transaction Monitoring**](https://github.com/ishaaaan17/aml-transaction-monitoring) | 18.3x PR-AUC gain over rules (0.0089 → 0.1633) · 80% false-positive cut at 90% recall |
+| Sep 2025 | [**Decentralized P2P File Sharing Engine**](https://github.com/ishaaaan17/p2p-file-sharing) | Trackerless C++17 UDP protocol · zero-drop swarm recovery · O(1) memory persistence |
 
 
 <div align="center">
