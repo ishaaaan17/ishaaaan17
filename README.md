@@ -46,7 +46,6 @@
 | Aug 2026 | **SEC Financial Intelligence RAG Engine** | 7.25 ms P50 latency · 100% Top-4 table retrieval · zero-leakage payload isolation |
 | Jan 2026 | **GraphSAGE AML Transaction Monitoring** | 18.3x PR-AUC gain over rules (0.0089 → 0.1633) · 80% false-positive cut at 90% recall |
 | Sep 2025 | **Decentralized P2P File Sharing Engine** | Trackerless C++17 UDP protocol · zero-drop swarm recovery · O(1) memory persistence |
-| Jul 2026 | **Post-Trade Lifecycle & Settlement Simulator** | Multi-counterparty trade break injection (10% rate) · automated SSI & price break triage |
 
 
 <div align="center">
@@ -55,7 +54,7 @@
 
 <h2>SELECTED WORK</h2>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=500&size=15&duration=3200&pause=1000&color=8B5CF6&center=true&vCenter=true&width=640&lines=%E2%99%A0+%E2%99%A5+++five+builds%2C+one+throughline%3A+measure+everything+++%E2%99%A6+%E2%99%A3;from+raw+UDP+sockets+to+GNNs%2C+lakehouses%2C+and+state+machine+RAG+%E2%86%93" alt="section tease" />
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=500&size=15&duration=3200&pause=1000&color=8B5CF6&center=true&vCenter=true&width=640&lines=%E2%99%A0+%E2%99%A5+++four+builds%2C+one+throughline%3A+measure+everything+++%E2%99%A6+%E2%99%A3;from+raw+UDP+sockets+to+GNNs%2C+lakehouses%2C+and+state+machine+RAG+%E2%86%93" alt="section tease" />
 
 </div>
 
@@ -168,35 +167,6 @@ A decentralized peer-to-peer file distribution protocol written in C++17 from th
 - **Bandwidth reciprocity (`ChokeManager`):** Evaluates upload vs. download byte ratios per peer; sends `CHOKE` frames to uncooperative nodes to incentivize balanced contribution.
 
 `C++17` `Winsock` `raw UDP datagrams` `CMake` `Wireshark` `GoogleTest` `Streamlit` `multithreading`
-
----
-
-### [Post-Trade Lifecycle & Settlement Simulator](https://github.com/ishaaaan17/trade-lifecycle-simulator) — Exception Management & Settlement Engine
-
-> `[ financial operations ] [ trade matching ] [ break triage ] [ risk operations ] [ Streamlit ]`
-
-An end-to-end institutional post-trade execution and settlement simulation engine modeling equity trade operations across 12 institutional counterparties. Generates deterministic trade traffic, matches execution logs, and simulates real-world clearing exceptions by injecting realistic trade breaks with automated reconciliation workflows.
-
-```
-Institutional Execution (12 Counterparties)
-      │
-      ▼
-Trade Break Generator (10% Overall Break Injection Rate)
- ├── Quantity Mismatch  [35%] ──► Recalculate block allocations
- ├── Late Confirmation  [25%] ──► Escalate to risk queue
- ├── SSI Mismatch       [20%] ──► Standard Settlement Instruction validation
- ├── Price Mismatch     [12%] ──► Threshold comparison vs. market tape
- └── Counterparty Break [ 8%] ──► LEI / account resolution
-      │
-      ▼
-Automated Settlement & Reconciliation Dashboard (Streamlit)
-```
-
-- **Synthetic Trade Generation:** Ingests daily market pricing and simulates deterministic equity executions across buy-side funds (Meridian, Silverlake, Blackstone Ridge, etc.).
-- **Categorical Break Ingestion:** Models realistic operational risk by systematically injecting quantity discrepancies, missing SSIs, and execution price drift.
-- **Straight-Through Processing (STP) Tracking:** Monitors settlement failure rates and provides exception-resolution workflows before trade settlement deadlines.
-
-`Python` `pandas` `NumPy` `Streamlit` `financial operations` `trade clearing` `exception triage`
 
 ---
 
